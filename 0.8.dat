@@ -1,34 +1,31 @@
 Thread 0 vpp_main (lcore 28)
-Time 10.1, average vectors/node 0.00, last 128 main loops 0.00 per node 0.00
+Time 10.2, average vectors/node 0.00, last 128 main loops 0.00 per node 0.00
   vector rates in 0.0000e0, out 0.0000e0, drop 0.0000e0, punt 0.0000e0
              Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
-api-rx-from-ring                 active                  0               0               8          9.22e4            0.00
-cdp-process                     any wait                 0               0               1          6.50e3            0.00
-dpdk-process                    any wait                 0               0               4          1.24e4            0.00
-fib-walk                        any wait                 0               0            1044          3.13e3            0.00
-gmon-process                    time wait                0               0               2          6.57e3            0.00
-ikev2-manager-process           any wait                 0               0              11          3.44e3            0.00
-ip6-icmp-neighbor-discovery-ev  any wait                 0               0              11          3.39e3            0.00
-lisp-retry-service              any wait                 0               0               5          6.68e3            0.00
-unix-epoll-input                 polling             75557               0               0          3.45e5            0.00
-vpe-oam-process                 any wait                 0               0               5          3.32e3            0.00
+api-rx-from-ring                 active                  0               0              46          9.89e4            0.00
+cdp-process                     any wait                 0               0               1          1.86e3            0.00
+dpdk-process                    any wait                 0               0               4          1.16e4            0.00
+fib-walk                        any wait                 0               0            1053          3.24e3            0.00
+gmon-process                    time wait                0               0               2          7.45e3            0.00
+ikev2-manager-process           any wait                 0               0              10          3.73e3            0.00
+ip6-icmp-neighbor-discovery-ev  any wait                 0               0              10          2.45e3            0.00
+lisp-retry-service              any wait                 0               0               5          4.37e3            0.00
+unix-epoll-input                 polling            113210               0               0          2.33e5            0.00
+vpe-oam-process                 any wait                 0               0               5          2.86e3            0.00
 ---------------
 Thread 1 vpp_wk_0 (lcore 29)
-Time 10.1, average vectors/node 255.99, last 128 main loops 0.00 per node 0.00
-  vector rates in 9.6722e6, out 6.4973e6, drop 3.1749e6, punt 0.0000e0
+Time 10.2, average vectors/node 136.76, last 128 main loops 0.00 per node 0.00
+  vector rates in 9.7779e6, out 2.0223e6, drop 7.7556e6, punt 0.0000e0
              Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
-TenGigabitEthernet84/0/1-outpu   active             255808        65486072               0          8.25e0          255.99
-TenGigabitEthernet84/0/1-tx      active             255808        65486072               0          7.62e1          255.99
-dpdk-input                       polling            660543        97485817               0          1.21e2          147.58
-error-drop                       active             125000        31999745               0          4.14e1          255.99
-ip4-input-no-checksum            active             255808        65486072               0          2.85e1          255.99
-ip4-load-balance                 active             255808        65486072               0          1.92e1          255.99
-ip4-lookup                       active             255808        65486072               0          3.76e1          255.99
-ip4-rewrite                      active             255808        65486072               0          2.76e1          255.99
----------------
-Thread 2 vpp_wk_1 (lcore 30)
-Time 10.1, average vectors/node 0.00, last 128 main loops 0.00 per node 0.00
-  vector rates in 0.0000e0, out 0.0000e0, drop 0.0000e0, punt 0.0000e0
-             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
-dpdk-input                       polling          73721371               0               0          2.26e2            0.00
+TenGigabitEthernet84/0/1-outpu   active             160728        20644283               0          1.04e1          128.44
+TenGigabitEthernet84/0/1-tx      active             160728        20644283               0          8.22e1          128.44
+dpdk-input                       polling            722939        99816486               0          1.40e2          138.07
+error-drop                       active             501555        79172203               0          4.93e1          157.85
+ip4-input-no-checksum            active             160728        20644283               0          3.24e1          128.44
+ip4-load-balance                 active             160728        20644283               0          2.15e1          128.44
+ip4-lookup                       active             160728        20644283               0          3.17e1          128.44
+ip4-rewrite                      active             160728        20644283               0          3.12e1          128.44
+ip6-input                        active             141426        18042189               0          3.61e1          127.57
+ip6-mfib-forward-lookup          active             141426        18042189               0          1.74e2          127.57
+ip6-mfib-forward-rpf             active             141426        18042189               0          1.97e1          127.57
 

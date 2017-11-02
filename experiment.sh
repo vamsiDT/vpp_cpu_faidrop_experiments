@@ -1,4 +1,4 @@
-WORKDIR="/home/vk/fairdrop_cpu_experiments/cpu_weights_ip4"
+WORKDIR="/home/vk/fairdrop_cpu_experiments/cpu_weights_ip46"
 SCRIPTS="/home/vk/scripts_cpu"
 BW=0.1
 
