@@ -1,6 +1,6 @@
 WORKDIR="/home/vk/vpp_cpu_faidrop_experiments"
 SCRIPTS="/home/vk/scripts_cpu"
-BW=0.90
+BW=0.97
 
 sudo killall vpp_main
 sudo killall pktgen
@@ -13,7 +13,7 @@ sudo killall pktgen
 echo "disabling turbo boost"
 echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
-until  [ $(echo $BW | awk -F "." '{print $1}') -gt 0 -a $(echo $BW | awk -F "." '{print $2}') -eq 1  ]
+until  [ $(echo $BW | awk -F "." '{print $1}') -ge 0 -a $(echo $BW | awk -F "." '{print $2}') -eq 98  ]
 do
     echo -e "\n\n\nPerforming experiment for Bandwidth limit $BW factor of cpu 2.6Ghz\n\n\n"
     sleep 3
