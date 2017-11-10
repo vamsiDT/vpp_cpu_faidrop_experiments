@@ -38,7 +38,9 @@ do
 done
 
     cd $VPP_ROOT
-	git checkout -f vpp_default
+    sudo make wipe-release
+    sudo make wipedist
+    git checkout -f vpp_default
     make build-release
     echo -e "\n\n\nStarting VPP in l3 forwarding mode with $NAMELC1P0 (Receiving interface) and $NAMELC1P1 (Transmitting Interface)\n\n\n"
     sleep 3
@@ -51,7 +53,7 @@ done
     sudo killall vpp_main
     sudo killall pktgen
     cp /tmp/show $WORKDIR/default_run.dat
-        cp /tmp/data $WORKDIR/default_int.dat
+    cp /tmp/data $WORKDIR/default_int.dat
 
 
 echo "################################"
