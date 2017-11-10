@@ -14,7 +14,7 @@ BW=0.92
 echo "disabling turbo boost"
 echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
-until  [ $(echo $BW | awk -F "." '{print $1}') -ge 0 -a $(echo $BW | awk -F "." '{print $2}') -eq 93  ]
+until  [ $(echo $BW | awk -F "." '{print $1}') -ge 0 -a $(echo $BW | awk -F "." '{print $2}') -eq 92  ]
 do
     echo -e "\n\n\nPerforming experiment for Bandwidth limit $BW factor of cpu 2.6Ghz\n\n\n"
     sleep 3
