@@ -1,0 +1,13 @@
+             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
+TenGigabitEthernet84/0/1-outpu   active             280043        18015976               0    209674012.00           64.33
+TenGigabitEthernet84/0/1-tx      active             280043        18015976               0   1527710648.00           64.33
+dpdk-input                       polling            736058        97421414               0  13654827368.00          132.36
+error-drop                       active             472793        79405438               0   2902243820.00          167.95
+ip4-input-no-checksum            active             280043        18015976               0    617231172.00           64.33
+ip4-load-balance                 active             280043        18015976               0    381385732.00           64.33
+ip4-lookup                       active             280043        18015976               0    608279200.00           64.33
+ip4-rewrite                      active             280043        18015976               0    571585088.00           64.33
+ip6-input                        active             141375        27097242               0    895461116.00          191.67
+ip6-mfib-forward-lookup          active             141375        27097242               0   4500721168.00          191.67
+ip6-mfib-forward-rpf             active             141375        27097242               0    518187244.00          191.67
+

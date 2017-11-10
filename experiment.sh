@@ -1,6 +1,6 @@
-WORKDIR="/home/vk/fairdrop_cpu_experiments/cpu_weights_ip46"
+WORKDIR="/home/vk/vpp_cpu_faidrop_experiments"
 SCRIPTS="/home/vk/scripts_cpu"
-BW=0.1
+BW=0.90
 
 sudo killall vpp_main
 sudo killall pktgen
@@ -9,12 +9,12 @@ sudo killall pktgen
 
 ######################WIthout cpu turbo boost#####################
 
-BW=0.1
+BW=0.92
 
 echo "disabling turbo boost"
 echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
-until  [ $(echo $BW | awk -F "." '{print $1}') -gt 0 -a $(echo $BW | awk -F "." '{print $2}') -gt 0 ]
+until  [ $(echo $BW | awk -F "." '{print $1}') -ge 0 -a $(echo $BW | awk -F "." '{print $2}') -eq 93  ]
 do
     echo -e "\n\n\nPerforming experiment for Bandwidth limit $BW factor of cpu 2.6Ghz\n\n\n"
     sleep 3
@@ -33,8 +33,9 @@ do
     $SCRIPTS/pktgen_capture.sh
     sudo killall vpp_main
     sudo killall pktgen
-    cp /tmp/show $WORKDIR/$BW.dat
-    BW=$(python -c "print($BW+0.1)")
+    cp /tmp/show $WORKDIR/"$BW"_run.dat
+	cp /tmp/data $WORKDIR/"$BW"_int.dat
+    BW=$(python -c "print($BW+0.01)")
 done
 
 echo "################################"

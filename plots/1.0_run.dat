@@ -1,0 +1,13 @@
+TenGigabitEthernet84/0/1-outpu   active             193342        49478797               0    388380676.00          255.91
+TenGigabitEthernet84/0/1-tx      active             193342        49478797               0   3729910740.00          255.91
+dpdk-input                       polling            559257        49495501               0   7034408896.00           88.50
+error-drop                       active                 87           16704               0       725688.00          192.00
+interface-output                 active             193255        37042140               0    462290319.99          191.67
+ip4-input-no-checksum            active             193342        12436657               0    419601520.00           64.32
+ip4-load-balance                 active             193342        12436657               0    288731584.00           64.32
+ip4-lookup                       active             193342        12436657               0    433908032.00           64.32
+ip4-rewrite                      active             193342        12436657               0    438336852.00           64.32
+ip6-input                        active             193255        37042140               0   1421953232.00          191.67
+ip6-lookup                       active             193255        37042140               0  10354148420.00          191.67
+ip6-rewrite                      active             193255        37042140               0   1378709884.00          191.67
+
