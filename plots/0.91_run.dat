@@ -1,13 +1,13 @@
-             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
-TenGigabitEthernet84/0/1-outpu   active             280043        18015976               0    209674012.00           64.33
-TenGigabitEthernet84/0/1-tx      active             280043        18015976               0   1527710648.00           64.33
-dpdk-input                       polling            736058        97421414               0  13654827368.00          132.36
-error-drop                       active             472793        79405438               0   2902243820.00          167.95
-ip4-input-no-checksum            active             280043        18015976               0    617231172.00           64.33
-ip4-load-balance                 active             280043        18015976               0    381385732.00           64.33
-ip4-lookup                       active             280043        18015976               0    608279200.00           64.33
-ip4-rewrite                      active             280043        18015976               0    571585088.00           64.33
-ip6-input                        active             141375        27097242               0    895461116.00          191.67
-ip6-mfib-forward-lookup          active             141375        27097242               0   4500721168.00          191.67
-ip6-mfib-forward-rpf             active             141375        27097242               0    518187244.00          191.67
+TenGigabitEthernet84/0/1-outpu   active             327920        37231968               0    358248332.00          113.54
+TenGigabitEthernet84/0/1-tx      active             327920        37231968               0   2965551780.00          113.54
+dpdk-input                       polling            691456        86907699               0  11940086436.00          125.69
+error-drop                       active             288155        49675731               0   1843729776.00          172.39
+interface-output                 active             100795        19317662               0    245969532.00          191.65
+ip4-input-no-checksum            active             278454        17914306               0    614378840.00           64.33
+ip4-load-balance                 active             278454        17914306               0    378950100.00           64.33
+ip4-lookup                       active             278454        17914306               0    598077944.00           64.33
+ip4-rewrite                      active             278454        17914306               0    586963940.00           64.33
+ip6-input                        active             100795        19317662               0    644141912.00          191.65
+ip6-lookup                       active             100795        19317662               0   5435406208.00          191.65
+ip6-rewrite                      active             100795        19317662               0    731423056.00          191.65
 
