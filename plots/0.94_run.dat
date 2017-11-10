@@ -1,13 +1,13 @@
-TenGigabitEthernet84/0/1-outpu   active             313939        41256983               0    367984464.00          131.42
-TenGigabitEthernet84/0/1-tx      active             313939        41256983               0   3213731284.00          131.42
-dpdk-input                       polling            668183        80368334               0  11223723468.00          120.28
-error-drop                       active             204046        39111351               0   1466349576.00          191.68
-interface-output                 active             109893        21064795               0    271461244.00          191.68
-ip4-input-no-checksum            active             313939        20192188               0    670121652.00           64.32
-ip4-load-balance                 active             313939        20192188               0    447270212.00           64.32
-ip4-lookup                       active             313939        20192188               0    672181356.00           64.32
-ip4-rewrite                      active             313939        20192188               0    657729072.00           64.32
-ip6-input                        active             109893        21064795               0    700580064.00          191.68
-ip6-lookup                       active             109893        21064795               0   5907575384.00          191.68
-ip6-rewrite                      active             109893        21064795               0    798073704.00          191.68
+TenGigabitEthernet84/0/1-outpu   active             338765        47686323               0    431126064.00          140.77
+TenGigabitEthernet84/0/1-tx      active             338765        47686323               0   3718244784.00          140.77
+dpdk-input                       polling            693596        86724974               0  11953034056.00          125.04
+error-drop                       active             290109        39038651               0   1464224056.00          134.57
+interface-output                 active             208562        13313628               0    219805400.00           63.84
+ip4-input-no-checksum            active             178864        34372695               0   1004927556.00          192.17
+ip4-load-balance                 active             178864        34372695               0    662956240.00          192.17
+ip4-lookup                       active             178864        34372695               0   1004104928.00          192.17
+ip4-rewrite                      active             178864        34372695               0   1017516204.00          192.17
+ip6-input                        active             208562        13313628               0    516081612.00           63.84
+ip6-lookup                       active             208562        13313628               0   3816677472.00           63.84
+ip6-rewrite                      active             208562        13313628               0    562022572.00           63.84
 

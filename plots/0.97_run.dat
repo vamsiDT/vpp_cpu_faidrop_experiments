@@ -1,13 +1,13 @@
-TenGigabitEthernet84/0/1-outpu   active             253512        45469658               0    391165196.00          179.36
-TenGigabitEthernet84/0/1-tx      active             253512        45469658               0   3482628560.00          179.36
-dpdk-input                       polling            624644        64898983               0   9100934476.00          103.89
-error-drop                       active             101382        19429325               0    757956248.00          191.64
-interface-output                 active             152130        29155672               0    361340596.00          191.65
-ip4-input-no-checksum            active             253512        16313986               0    565251912.00           64.35
-ip4-load-balance                 active             253512        16313986               0    361341608.00           64.35
-ip4-lookup                       active             253512        16313986               0    562118044.00           64.35
-ip4-rewrite                      active             253512        16313986               0    555477976.00           64.35
-ip6-input                        active             152130        29155672               0    980813824.00          191.65
-ip6-lookup                       active             152130        29155672               0   8158075916.00          191.65
-ip6-rewrite                      active             152130        29155672               0   1099849760.00          191.65
+             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
+TenGigabitEthernet84/0/1-outpu   active             236513        45448179               0    414739608.00          192.16
+TenGigabitEthernet84/0/1-tx      active             236513        45448179               0   3471064756.00          192.16
+dpdk-input                       polling            478378        85121647               0  11721700156.00          177.94
+error-drop                       active             428501        39673468               0   1533781024.00           92.59
+ip4-input-no-checksum            active             236513        45448179               0   1371311712.00          192.16
+ip4-load-balance                 active             236513        45448179               0    866147396.00          192.16
+ip4-lookup                       active             236513        45448179               0   1306212684.00          192.16
+ip4-rewrite                      active             236513        45448179               0   1280395812.00          192.16
+ip6-input                        active             318729        20349264               0    776527420.00           63.85
+ip6-mfib-forward-lookup          active             318729        20349264               0   3178085412.00           63.85
+ip6-mfib-forward-rpf             active             318729        20349264               0    435220652.00           63.85
 
