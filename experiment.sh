@@ -9,12 +9,11 @@ sudo killall pktgen
 
 ######################WIthout cpu turbo boost#####################
 
-BW=0.91
 
 echo "disabling turbo boost"
 echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
-until  [ $(echo $BW | awk -F "." '{print $1}') -ge 0 -a $(echo $BW | awk -F "." '{print $2}') -eq 92  ]
+until  [ $(echo $BW | awk -F "." '{print $1}') -gt 0 -a $(echo $BW | awk -F "." '{print $2}') -eq 1  ]
 do
     echo -e "\n\n\nPerforming experiment for Bandwidth limit $BW factor of cpu 2.6Ghz\n\n\n"
     sleep 3
