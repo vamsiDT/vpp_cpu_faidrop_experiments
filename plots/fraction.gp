@@ -38,7 +38,7 @@ set xlabel "cpu_alpha"
 #set format y "%.0t^.10^%T"
 #set ytics 0.1
 #set yran [0.2:0.8]
-set xran [0.90:1]
+set xran [0.90:1.01]
 #set xtics 0.01
 min(a,b)=a<b?a:b
 #set key autotitle columnhead
