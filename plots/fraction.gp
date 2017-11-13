@@ -34,7 +34,7 @@ set pointsize 0.25
 
 set key top righ
 set ylabel "Fraction of packets out of total processed packets by vpp"
-set xlabel "cpu_alpha"
+set xlabel "CPU Alpha"
 #set format y "%.0t^.10^%T"
 #set ytics 0.1
 #set yran [0.2:0.8]
