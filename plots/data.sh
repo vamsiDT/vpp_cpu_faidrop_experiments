@@ -15,7 +15,6 @@ do
 	A10=$(sed '10q;d' "BW"_run.dat | awk '{print $6}' | awk -F "." '{print $1}')
 	A11=$(sed '11q;d' "BW"_run.dat | awk '{print $6}' | awk -F "." '{print $1}')
 	A12=$(sed '12q;d' "BW"_run.dat | awk '{print $6}' | awk -F "." '{print $1}')
-
     BW=$(python -c "print($BW+0.01)")
 done
 
