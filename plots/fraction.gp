@@ -38,11 +38,11 @@ set xlabel "cpu_alpha"
 #set format y "%.0t^.10^%T"
 #set ytics 0.1
 #set yran [0.2:0.8]
-set xran [0.90:1]
+#set xran [0.90:1]
 #set xtics 0.01
 min(a,b)=a<b?a:b
 #set key autotitle columnhead
 
 plot \
-	"rundatalpha.dat"	u 1:2   t "IP4"	w  lp pt fc lc rgb "black", \
-	"rundatalpha.dat"	u 1:3	t "IP6"	w  lp pt fc lc rgb "blue"
+	"rundatalpha.dat"	u 0:2:xtic(1)   t "IP4"	w  lp pt fc lc rgb "black", \
+	"rundatalpha.dat"	u 0:3:xtic(1)	t "IP6"	w  lp pt fc lc rgb "blue"
