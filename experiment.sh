@@ -1,63 +1,19 @@
-WORKDIR="/home/vk/vpp_cpu_faidrop_experiments"
 SCRIPTS="/home/vk/scripts_cpu"
-BW=0.97
-
+EXP="/home/vk/vpp_cpu_faidrop_experiments"
+FLOW="/home/vk/FLOW_MONITOR/DPDK-FlowCount"
+sudo killall FlowCount
 sudo killall vpp_main
 sudo killall pktgen
+cd $FLOW
+sudo -E ./build/FlowCount -l 38,39,40 --file-prefix flow --socket-mem 4096,4096 -b $LC1P1 -b $LC1P0 -b $LC0P0 >$EXP/flow_monitor.dat &
+sleep 30
+cd $VPP_ROOT
+sudo make build-release
+sudo -E $SCRIPTS/vpp_ctl.sh
+sudo -E $SCRIPTS/pktgen_capture.sh
+cp /tmp/show $EXP/showrun.dat
+cp /tmp/data $EXP/showint.dat
 
-#CHECK DPDK-SETUP BEFORE RUNNING THE EXPERIMENT#
-
-######################WIthout cpu turbo boost#####################
-
-
-echo "disabling turbo boost"
-echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
-
-until  [ $(echo $BW | awk -F "." '{print $1}') -ge 0 -a $(echo $BW | awk -F "." '{print $2}') -eq 97  ]
-do
-    echo -e "\n\n\nPerforming experiment for Bandwidth limit $BW factor of cpu 2.6Ghz\n\n\n"
-    sleep 3
-    sudo rm /dev/hugepages/*
-    echo 60 | sudo tee /sys/kernel/mm/hugepages/hugepages-1048576kB/nr_hugepages
-    sudo -E $SCRIPTS/change-bw-limit.sh 1 $BW #check this line
-	cd $VPP_ROOT
-    make build-release
-    echo -e "\n\n\nStarting VPP in l3 forwarding mode with $NAMELC1P0 (Receiving interface) and $NAMELC1P1 (Transmitting Interface)\n\n\n"
-    sleep 3
-    $SCRIPTS/vpp_l3.sh &
-    sleep 20
-    sudo -E $SCRIPTS/ctl.sh
-    echo -e "\n\n\nStarting Dpdk-Pktgen with $LC0P0 (Transmitting Interface) and $LC0P1 (Receiving Interface)\n\n\n"
-    #screen -L
-    $SCRIPTS/pktgen_capture.sh
-    sudo killall vpp_main
-    sudo killall pktgen
-    cp /tmp/show $WORKDIR/"$BW"_run.dat
-	cp /tmp/data $WORKDIR/"$BW"_int.dat
-    BW=$(python -c "print($BW+0.01)")
-done
-
-	cd $VPP_ROOT
-	sudo make wipe-release
-	sudo make wipedist
-	git checkout -f vpp_default
-    make build-release
-    echo -e "\n\n\nStarting VPP in l3 forwarding mode with $NAMELC1P0 (Receiving interface) and $NAMELC1P1 (Transmitting Interface)\n\n\n"
-    sleep 3
-    $SCRIPTS/vpp_l3.sh &
-    sleep 20
-    sudo -E $SCRIPTS/ctl.sh
-    echo -e "\n\n\nStarting Dpdk-Pktgen with $LC0P0 (Transmitting Interface) and $LC0P1 (Receiving Interface)\n\n\n"
-    #screen -L
-    $SCRIPTS/pktgen_capture.sh
-    sudo killall vpp_main
-    sudo killall pktgen
-    cp /tmp/show $WORKDIR/default_run.dat
-    cp /tmp/data $WORKDIR/default_int.dat
-
-
-echo "################################"
-echo -e "\n"
-echo "SUCCESSFULLY FINISHED EXPERIMENT"
-echo -e "\n"
-echo "################################"
+#post processing
+cd $EXP
+cat flow_monitor.dat | tail -l 13 > flow_throughput.dat

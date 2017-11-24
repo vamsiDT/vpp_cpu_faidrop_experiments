@@ -1,0 +1,13 @@
+Flow entry 9000: 23288: 11439272 (throughput: 570136.32 pps)  0: 0 (throughput: 0.00 pps)  HASH:1526211368
+ Flow entry 20026: 63443: 22878506 (throughput: 1140270.74 pps)  0: 0 (throughput: 0.00 pps)  HASH:4157820474
+ Flow entry 42438: 35432: 2 (throughput: 0.10 pps)  0: 0 (throughput: 0.00 pps)  HASH:2322113990
+ [Double Hash + Linked-list]: 3 flows with 34317780 packets
+
+DPDK: Received pkts 34101148 
+Dropped packets 0 
+Erroneous packets 0
+
+Queue 0 counter's value: 34317780
+
+Queue 1 counter's value: 0
+The time interval is 20.0641
