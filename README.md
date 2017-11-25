@@ -5,3 +5,9 @@
 3. IP4-75% IP6-25%
 4. The clocks column in show run show the total clock cycles spent by a node since the last clear.
 5. A busy loop of 200 clock cyles is added to ip6-lookup node to stress more clock cycles on ip6 chain.
+
+# PARAMETERS
+---
+1. THRESHOLD 4480
+2. 20 flows
+
