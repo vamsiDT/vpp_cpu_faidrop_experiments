@@ -20,5 +20,3 @@ sudo -E $SCRIPTS/vpp_ctl.sh
 sudo -E $SCRIPTS/pktgen_capture.sh
 cp /tmp/show $EXP/showrun.dat
 cp /tmp/data $EXP/showint.dat
-
-
