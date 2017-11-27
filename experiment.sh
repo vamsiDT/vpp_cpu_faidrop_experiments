@@ -17,6 +17,6 @@ sudo make build-release
 sudo -E $SCRIPTS/vpp_ctl.sh
 #sudo $SFLAG $BINS/vppctl -p vpp2 set dpdk interface placement TenGigabitEthernet84/0/1 queue 1 thread 1
 #sudo $SFLAG $BINS/vppctl -p vpp2 set dpdk interface placement TenGigabitEthernet84/0/0 queue 1 thread 1
-sudo -E $SCRIPTS/pktgen_capture.sh
+sudo -E $SCRIPTS/pktgen_vpp_default.sh
 cp /tmp/show $EXP/showrun.dat
 cp /tmp/data $EXP/showint.dat
