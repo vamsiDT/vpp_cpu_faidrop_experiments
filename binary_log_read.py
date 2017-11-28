@@ -49,16 +49,16 @@ if __name__ == '__main__':
                     e= parse_data(itr, 3)   # Binary file dependent
 ####################
                     f= parse_data(itr, 4)   # First data
-                    d1= parse_data(itr, 2)   # Drop data
+                    d1= parse_data(itr, 4)   # Drop data
                     d2= parse_data(itr, 2)   # Drop data
-                    #d3= parse_data(itr, 4)   # Drop data
+                    d3= parse_data(itr, 2)   # Drop data
 # MATCH HERE YOUR DATA!
 ####################
                     h= parse_double(itr, 8)   # Timestamp
 
                     #print ("Id:",e,"Vector:",f,"Clock:",g,"TS:",h)
                     #print ("Id:",e,"Vector:",f,"Clock:",g)
-                    print ("Flow Hash: ", f, "Flow Weight: ", d1, "Flow Cost: ", d2)
+                    print ("Flow Hash: ", f, "Flow Vqueue: ", d1, "Flow Weight: ", d2, "Flow Cost: ", d3)
                 except:
                     print ("")
 
