@@ -1,5 +1,5 @@
 #IMPORTANT: Configure pktgen with number of flows before running the experiment
-
+ELOG=$1 #ELOG 0 means no elog; ELOG 1 means elog is enabled.
 SCRIPTS="/home/vk/scripts_cpu"
 EXP="/home/vk/vpp_cpu_faidrop_experiments"
 FLOW="/home/vk/FLOW_MONITOR/DPDK-FlowCount"
@@ -17,6 +17,10 @@ sudo make build-release
 sudo -E $SCRIPTS/vpp_ctl.sh
 #sudo $SFLAG $BINS/vppctl -p vpp2 set dpdk interface placement TenGigabitEthernet84/0/1 queue 1 thread 1
 #sudo $SFLAG $BINS/vppctl -p vpp2 set dpdk interface placement TenGigabitEthernet84/0/0 queue 1 thread 1
+if [[ $ELOG -eq 0 ]];then
 sudo -E $SCRIPTS/pktgen_vpp_default.sh
+else
+sudo -E $SCRIPTS/pktgen_capture.sh
+fi
 cp /tmp/show $EXP/showrun.dat
 cp /tmp/data $EXP/showint.dat
