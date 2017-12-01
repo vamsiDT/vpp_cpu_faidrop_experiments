@@ -65,61 +65,44 @@ RX rate: 0.00 Mpps, Total RX pkts: 0, Total dropped pkts: 0
 RX rate: 0.00 Mpps, Total RX pkts: 0, Total dropped pkts: 0
 RX rate: 0.00 Mpps, Total RX pkts: 0, Total dropped pkts: 0
 RX rate: 0.00 Mpps, Total RX pkts: 0, Total dropped pkts: 0
-RX rate: 0.00 Mpps, Total RX pkts: 0, Total dropped pkts: 0
-RX rate: 0.00 Mpps, Total RX pkts: 0, Total dropped pkts: 0
-RX rate: 5.36 Mpps, Total RX pkts: 5362061, Total dropped pkts: 0
-RX rate: 6.26 Mpps, Total RX pkts: 11623320, Total dropped pkts: 0
-RX rate: 6.26 Mpps, Total RX pkts: 17887224, Total dropped pkts: 0
-RX rate: 6.26 Mpps, Total RX pkts: 24149304, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 30415460, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 36683076, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 42949852, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 49218451, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 55492928, Total dropped pkts: 0
-RX rate: 6.23 Mpps, Total RX pkts: 61727480, Total dropped pkts: 0
-RX rate: 6.17 Mpps, Total RX pkts: 67900512, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 74168610, Total dropped pkts: 0
-RX rate: 6.22 Mpps, Total RX pkts: 80389638, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 86660644, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 92928002, Total dropped pkts: 0
-RX rate: 6.14 Mpps, Total RX pkts: 99071467, Total dropped pkts: 0
-RX rate: 6.25 Mpps, Total RX pkts: 105324364, Total dropped pkts: 0
-RX rate: 6.27 Mpps, Total RX pkts: 111591320, Total dropped pkts: 0
-RX rate: 6.22 Mpps, Total RX pkts: 117811652, Total dropped pkts: 0
-RX rate: 6.26 Mpps, Total RX pkts: 124076032, Total dropped pkts: 0
+RX rate: 1.39 Mpps, Total RX pkts: 1390596, Total dropped pkts: 0
+RX rate: 6.63 Mpps, Total RX pkts: 8021235, Total dropped pkts: 0
+RX rate: 6.63 Mpps, Total RX pkts: 14655916, Total dropped pkts: 0
+RX rate: 6.64 Mpps, Total RX pkts: 21292216, Total dropped pkts: 0
+RX rate: 6.64 Mpps, Total RX pkts: 27929388, Total dropped pkts: 0
+RX rate: 6.63 Mpps, Total RX pkts: 34564284, Total dropped pkts: 0
+RX rate: 6.57 Mpps, Total RX pkts: 41132224, Total dropped pkts: 0
+RX rate: 6.57 Mpps, Total RX pkts: 47698636, Total dropped pkts: 0
+RX rate: 6.63 Mpps, Total RX pkts: 54333032, Total dropped pkts: 0
+RX rate: 6.63 Mpps, Total RX pkts: 60966684, Total dropped pkts: 0
+RX rate: 6.63 Mpps, Total RX pkts: 67600296, Total dropped pkts: 0
+RX rate: 6.57 Mpps, Total RX pkts: 74169884, Total dropped pkts: 0
+RX rate: 6.64 Mpps, Total RX pkts: 80805032, Total dropped pkts: 0
+RX rate: 6.59 Mpps, Total RX pkts: 87391304, Total dropped pkts: 0
+RX rate: 6.63 Mpps, Total RX pkts: 94023744, Total dropped pkts: 0
+RX rate: 6.57 Mpps, Total RX pkts: 100588828, Total dropped pkts: 0
+RX rate: 6.62 Mpps, Total RX pkts: 107211742, Total dropped pkts: 0
+RX rate: 6.57 Mpps, Total RX pkts: 113780348, Total dropped pkts: 0
+RX rate: 6.49 Mpps, Total RX pkts: 120273739, Total dropped pkts: 0
+RX rate: 6.63 Mpps, Total RX pkts: 126905416, Total dropped pkts: 0
 
 Signal 2 received
 
 Begin post processing...
-START:1512141370.340126
-Flow entry 1800: 16406: 2749183 (throughput: 137036.23 pps)  0: 0 (throughput: 0.00 pps)  HASH:1075185416
- Flow entry 9888: 33964: 6506477 (throughput: 324322.92 pps)  0: 0 (throughput: 0.00 pps)  HASH:2225874592
- Flow entry 12258: 45944: 8625133 (throughput: 429929.80 pps)  0: 0 (throughput: 0.00 pps)  HASH:3010998242
- Flow entry 13348: 60164: 6377033 (throughput: 317870.63 pps)  0: 0 (throughput: 0.00 pps)  HASH:3942921252
- Flow entry 15718: 56528: 8159555 (throughput: 406722.52 pps)  0: 0 (throughput: 0.00 pps)  HASH:3704634726
- Flow entry 18296: 49159: 3752752 (throughput: 187060.29 pps)  0: 0 (throughput: 0.00 pps)  HASH:3221702520
- Flow entry 20026: 63443: 8625131 (throughput: 429929.70 pps)  0: 0 (throughput: 0.00 pps)  HASH:4157820474
- Flow entry 22012: 44975: 6880001 (throughput: 342941.66 pps)  0: 0 (throughput: 0.00 pps)  HASH:2947503612
- Flow entry 23742: 39035: 7682537 (throughput: 382945.00 pps)  0: 0 (throughput: 0.00 pps)  HASH:2558221502
- Flow entry 26320: 1213: 2760631 (throughput: 137606.87 pps)  0: 0 (throughput: 0.00 pps)  HASH:79521488
- Flow entry 33992: 18769: 4449298 (throughput: 221780.44 pps)  0: 0 (throughput: 0.00 pps)  HASH:1230079176
- Flow entry 36234: 32389: 8616524 (throughput: 429500.67 pps)  0: 0 (throughput: 0.00 pps)  HASH:2122681738
- Flow entry 38476: 9977: 7558036 (throughput: 376739.10 pps)  0: 0 (throughput: 0.00 pps)  HASH:653891148
- Flow entry 40718: 4397: 7833313 (throughput: 390460.61 pps)  0: 0 (throughput: 0.00 pps)  HASH:288202510
- Flow entry 42336: 36331: 3601959 (throughput: 179543.84 pps)  0: 0 (throughput: 0.00 pps)  HASH:2381030752
+START:1512143190.019523
+Flow entry 12258: 45944: 31631292 (throughput: 1576647.17 pps)  0: 0 (throughput: 0.00 pps)  HASH:3010998242
+ Flow entry 20026: 63443: 20208883 (throughput: 1007302.46 pps)  0: 0 (throughput: 0.00 pps)  HASH:4157820474
+ Flow entry 36234: 32389: 31485699 (throughput: 1569390.16 pps)  0: 0 (throughput: 0.00 pps)  HASH:2122681738
  Flow entry 42438: 35432: 2 (throughput: 0.10 pps)  0: 0 (throughput: 0.00 pps)  HASH:2322113990
- Flow entry 50360: 51520: 3225180 (throughput: 160762.85 pps)  0: 0 (throughput: 0.00 pps)  HASH:3376465080
- Flow entry 58640: 3578: 5113994 (throughput: 254912.98 pps)  0: 0 (throughput: 0.00 pps)  HASH:234546448
- Flow entry 60498: 14894: 8603132 (throughput: 428833.13 pps)  0: 0 (throughput: 0.00 pps)  HASH:976153682
- Flow entry 63380: 25170: 6455270 (throughput: 321770.45 pps)  0: 0 (throughput: 0.00 pps)  HASH:1649604500
- Flow entry 65238: 21894: 8601203 (throughput: 428736.98 pps)  0: 0 (throughput: 0.00 pps)  HASH:1434910422
- [Double Hash + Linked-list]: 21 flows with 126176344 packets
+ Flow entry 60498: 14894: 31630090 (throughput: 1576587.26 pps)  0: 0 (throughput: 0.00 pps)  HASH:976153682
+ Flow entry 65238: 21894: 18455812 (throughput: 919921.44 pps)  0: 0 (throughput: 0.00 pps)  HASH:1434910422
+ [Double Hash + Linked-list]: 6 flows with 133411778 packets
 
-DPDK: Received pkts 125360797 
+DPDK: Received pkts 132551404 
 Dropped packets 0 
 Erroneous packets 0
 
-Queue 0 counter's value: 126176344
+Queue 0 counter's value: 133411778
 
 Queue 1 counter's value: 0
-The time interval is 20.0617
+The time interval is 20.0624
