@@ -1,39 +1,39 @@
 Thread 0 vpp_main (lcore 28)
 Time 60.2, average vectors/node 1.50, last 128 main loops 0.00 per node 0.00
-  vector rates in 0.0000e0, out 6.6412e-2, drop 0.0000e0, punt 0.0000e0
+  vector rates in 0.0000e0, out 6.6403e-2, drop 0.0000e0, punt 0.0000e0
              Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
-TenGigabitEthernet84/0/0-outpu   active                  2               2               0         7612.00            1.00
-TenGigabitEthernet84/0/0-tx      active                  2               2               0         7180.00            1.00
-TenGigabitEthernet84/0/1-outpu   active                  2               2               0         2352.00            1.00
-TenGigabitEthernet84/0/1-tx      active                  2               2               0         3112.00            1.00
-api-rx-from-ring                 active                  0               0              37      6102164.00            0.00
-cdp-process                     any wait                 0               0              41        63668.00            0.00
-dpdk-process                    any wait                 0               0              20     10095576.00            0.00
-fib-walk                        any wait                 0               0            6213     20680848.00            0.00
-gmon-process                    time wait                0               0              12        41992.00            0.00
-icmp6-router-solicitation        active                  2               4               0        47872.00            2.00
-ikev2-manager-process           any wait                 0               0              60       197984.00            0.00
-ip6-icmp-neighbor-discovery-ev  any wait                 0               0              60       239792.00            0.00
-ip6-rewrite-mcast                active                  2               4               0        21244.00            2.00
-lisp-retry-service              any wait                 0               0              30       138036.00            0.00
-unix-epoll-input                 polling            491162               0               0 155905474440.00            0.00
-vpe-oam-process                 any wait                 0               0              29        81936.00            0.00
+TenGigabitEthernet84/0/0-outpu   active                  2               2               0         8012.00            1.00
+TenGigabitEthernet84/0/0-tx      active                  2               2               0        10792.00            1.00
+TenGigabitEthernet84/0/1-outpu   active                  2               2               0         2240.00            1.00
+TenGigabitEthernet84/0/1-tx      active                  2               2               0         5200.00            1.00
+api-rx-from-ring                 active                  0               0              38      6214379.99            0.00
+cdp-process                     any wait                 0               0              48        54432.00            0.00
+dpdk-process                    any wait                 0               0              20     10057723.99            0.00
+fib-walk                        any wait                 0               0            6210     21085248.00            0.00
+gmon-process                    time wait                0               0              12        43228.00            0.00
+icmp6-router-solicitation        active                  2               4               0        41368.00            2.00
+ikev2-manager-process           any wait                 0               0              60       185332.00            0.00
+ip6-icmp-neighbor-discovery-ev  any wait                 0               0              60       237244.00            0.00
+ip6-rewrite-mcast                active                  2               4               0        16944.00            2.00
+lisp-retry-service              any wait                 0               0              30       121416.00            0.00
+unix-epoll-input                 polling            495519               0               0 155922161560.00            0.00
+vpe-oam-process                 any wait                 0               0              29        77060.00            0.00
 ---------------
 Thread 1 vpp_wk_0 (lcore 29)
-Time 60.2, average vectors/node 255.99, last 128 main loops 14.00 per node 256.00
-  vector rates in 3.1513e6, out 3.1513e6, drop 0.0000e0, punt 0.0000e0
+Time 60.2, average vectors/node 256.00, last 128 main loops 14.00 per node 256.00
+  vector rates in 3.2216e6, out 3.2216e6, drop 0.0000e0, punt 0.0000e0
              Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
-TenGigabitEthernet84/0/1-outpu   active             741431       189806080               0   1570852392.00          255.99
-TenGigabitEthernet84/0/1-tx      active             741431       189806080               0  14376216439.99          255.99
-dpdk-input                       polling            936896       189806080               0  29390635748.00          202.59
-ip4-input-no-checksum            active             741431       189806080               0   5288760628.00          255.99
-ip4-load-balance                 active             741431       189806080               0   3518013276.00          255.99
-ip4-lookup                       active             741431       189806080               0   6638502368.00          255.99
-ip4-rewrite                      active             741431       189806080               0  95214555012.00          255.99
+TenGigabitEthernet84/0/1-outpu   active             758049       194060544               0   1623485116.00          256.00
+TenGigabitEthernet84/0/1-tx      active             758049       194060544               0  15088871424.00          256.00
+dpdk-input                       polling            904642       194060544               0  27031106388.00          214.52
+ip4-input-no-checksum            active             758049       194060544               0   5491468868.00          256.00
+ip4-load-balance                 active             758049       194060544               0   3630259656.00          256.00
+ip4-lookup                       active             758049       194060544               0   6814564044.00          256.00
+ip4-rewrite                      active             758049       194060544               0  96338002596.00          256.00
 ---------------
 Thread 2 vpp_wk_1 (lcore 30)
 Time 60.2, average vectors/node 0.00, last 128 main loops 0.00 per node 0.00
   vector rates in 0.0000e0, out 0.0000e0, drop 0.0000e0, punt 0.0000e0
              Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
-dpdk-input                       polling         475492608               0               0 155997467224.00            0.00
+dpdk-input                       polling         473660716               0               0 156017612328.00            0.00
 
