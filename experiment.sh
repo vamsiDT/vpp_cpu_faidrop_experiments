@@ -33,4 +33,3 @@ sudo -E $SCRIPTS/pktgen_capture.sh
 fi
 sudo cp /tmp/show $EXP/showrun.dat
 sudo cp /tmp/data $EXP/showint.dat
-
