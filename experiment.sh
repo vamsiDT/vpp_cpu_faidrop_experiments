@@ -33,3 +33,4 @@ sudo -E $SCRIPTS/pktgen_capture.sh
 fi
 sudo cp /tmp/show $EXP/showrun.dat
 sudo cp /tmp/data $EXP/showint.dat
+cat $EXP/flow_monitor.dat | tail --lines 31 | head --lines 21 | awk '{print $7"\t"$14}' | awk -F "\t|:" '{if ($1>1)print $1"\t"$3}' > $EXP/plots/flow_pps.dat
