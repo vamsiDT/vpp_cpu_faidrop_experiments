@@ -31,6 +31,6 @@ else
 echo "ELOG"
 sudo -E $SCRIPTS/pktgen_capture.sh
 fi
-sudo cp /tmp/show $EXP/showrun.dat
-sudo cp /tmp/data $EXP/showint.dat
-cat $EXP/flow_monitor.dat | tail --lines 31 | head --lines 21 | awk '{print $7"\t"$14}' | awk -F "\t|:" '{if ($1>1)print $1"\t"$3}' > $EXP/plots/flow_pps.dat
+#sudo cp /tmp/show $EXP/showrun.dat
+#sudo cp /tmp/data $EXP/showint.dat
+cat $EXP/flow_monitor.dat | tail --lines 31 | head --lines 21 | awk '{print $7"\t"$14}' | awk -F "\t|:" '{if ($1>1){if(($3==4157820474)||($3==2122681738)){print $1"\t"$3"\t"5000}else print $1"\t"$3"\t"500}} ' |sort -rnk3 > $EXP/plots/flow_pps.dat
