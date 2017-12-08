@@ -29,30 +29,34 @@
 #Happy gnuplotting
 
 
-set out "clk.pdf"
+set out "in_out.pdf"
 set term pdf font "Times,10"
 #set pointsize 1.25
 
 set key top righ
 #set ylabel "Per flow rate [pps]"
-set xlabel "Flow rank"
+set xlabel "Fairdrop"
 set xtics 1
 set boxwidth 0.25
 set style fill solid
-set ytics nomirror
-set y2tics
-set yrange [0:1e3]
-set y2range [0:6000]
-#set y2tic 500
-#set format y "%.0t^.10^%T"
-set ylabel "Per FLow Clk/sec MHz"
-set y2label "Flow Weight"
+#set ytics nomirror
+#set y2tics
+#set yrange [0:5]
+#set y2range [0:6000]
+set ylabel "Overall Throughput VPP"
+#set y2label "Flow Weight"
+#set format y "%.t^.10^%T"
 #set ytics 200000
 #set yran [1e3:]
 #min(a,b)=a<b?a:b
+stats 	'flow_pps.dat'	every ::1 using 1 nooutput
+total=int(STATS_sum)
+print("Total Throughput")
+print(total)
+#f(x)=total
+set yrange [0:8]
 
 plot \
-'flow_pps.dat'  u ($0+1+0.25):3:y2tic(3) t 'Flow Weight'          axes x1y2 with boxes, \
-'flow_pps.dat'  u ($0+1):(($1*$3)/1e6) t 'Cycles/sec per Flow' axes x1y1 with  boxes
-#'flow_pps.dat'  u ($0+1):($1*$3) t 'Cycles/sec per Flow'       w  boxes
-
+'in_out.dat'	u ($0+1+0.25):($2/1000000):ytic(2)   	t 'VPP Output'  axes x1y1 with boxes ,	\
+'in_out.dat'  u ($0+1):($1/1000000):ytic(1)	t 'VPP Input'   axes x1y1 with boxes
+#'flow_pps.dat'  u ($0+1-0.25):(f($1)/1000000)           t 'Per Flow Throughput'  axes x1y1 with boxes
