@@ -39,10 +39,20 @@ set xlabel "Flow rank"
 set xtics 1
 set boxwidth 0.25
 set style fill solid
+set ytics nomirror
+set y2tics
+set yrange [0:1e3]
+set y2range [0:6000]
+#set y2tic 500
 #set format y "%.0t^.10^%T"
-#set ytics 100000
-set yran [0:2*1e8]
+set ylabel "Per FLow Clk/sec MHz"
+set y2label "Flow Weight"
+#set ytics 200000
+#set yran [1e3:]
 #min(a,b)=a<b?a:b
 
 plot \
-'flow_pps.dat'  u ($0+1):($1*$3) t 'Cycles/sec per Flow'	w  boxes
+'flow_pps.dat'  u ($0+1+0.25):3:y2tic(3) t 'Flow Weight'          axes x1y2 with boxes, \
+'flow_pps.dat'  u ($0+1):(($1*$3)/1e6) t 'Cycles/sec per Flow' axes x1y1 with  boxes
+#'flow_pps.dat'  u ($0+1):($1*$3) t 'Cycles/sec per Flow'       w  boxes
+
