@@ -35,7 +35,7 @@ set term pdf font "Times,10"
 
 set key top righ
 #set ylabel "Per flow rate [pps]"
-set xlabel "Fairdrop"
+set xlabel "No Fairdrop"
 set xtics 1
 set boxwidth 0.25
 set style fill solid
