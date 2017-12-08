@@ -1,7 +1,8 @@
 #IMPORTANT: Configure pktgen with number of flows before running the experiment
 ELOG=$1 #ELOG 1 means no elog; ELOG 0 means elog is enabled.
 SCRIPTS="/home/vk/scripts_cpu"
-EXP="/home/vk/vpp_cpu_faidrop_experiments"
+#EXP="/home/vk/vpp_cpu_faidrop_experiments"
+EXP=$(pwd)
 FLOW="/home/vk/FLOW_MONITOR/DPDK-FlowCount"
 TEST=1
 if [[ $TEST -eq 10 ]];then
