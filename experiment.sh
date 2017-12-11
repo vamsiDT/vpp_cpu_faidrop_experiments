@@ -2,7 +2,7 @@
 ELOG=$1 #ELOG 1 means no elog; ELOG 0 means elog is enabled.
 SCRIPTS="/home/vk/scripts_cpu"
 EXP="/home/vk/vpp_cpu_faidrop_experiments"
-COST=400
+COST=340
 #EXP=$(pwd)
 FLOW="/home/vk/FLOW_MONITOR/DPDK-FlowCount"
 if [[ $ELOG -eq 1 ]];then
@@ -36,7 +36,7 @@ fi
 sudo cp /tmp/show $EXP/showrun.dat
 sudo cp /tmp/data $EXP/showint.dat
 
-cat $EXP/flow_monitor.dat | tail --lines 31 | head --lines 21 | awk '{print $7"\t"$14}' | awk -F "\t|:" '{if ($1>1){if(($3==4157820474)||($3==2122681738)){print $1"\t"$3"\t'$COST'"}else print $1"\t"$3"\t"350}} ' |sort -rnk3 > $EXP/plots/flow_pps.dat
+cat $EXP/flow_monitor.dat | tail --lines 31 | head --lines 21 | awk '{print $7"\t"$14}' | awk -F "\t|:" '{if ($1>1){if(($3==4157820474)||($3==2122681738)){print $1"\t"$3"\t'$COST'"}else print $1"\t"$3"\t"340}} ' |sort -rnk3 > $EXP/plots/flow_pps.dat
 echo -e "$(cat $EXP/showrun.dat | grep "vector rates" | head --lines 2 |tail --lines 1 | awk '{print $4}' | awk -F "," '{print IN = $1}')\t$(cat $EXP/showrun.dat | grep "vector rates" | head --lines 2 |tail --lines 1 | awk '{print $6}' | awk -F "," '{print IN = $1}')" > $EXP/plots/in_out.dat
 
 cd $EXP/plots
