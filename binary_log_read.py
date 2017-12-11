@@ -51,7 +51,7 @@ if __name__ == '__main__':
                     f= parse_data(itr, 4)   # First data
                     d1= parse_data(itr, 4)   # Drop data
                     d2= parse_data(itr, 4)   # Drop data
-                    d3= parse_data(itr, 4)   # Drop data
+                    d3= parse_data(itr, 2)   # Drop data
 # MATCH HERE YOUR DATA!
 ####################
                     h= parse_double(itr, 8)   # Timestamp
