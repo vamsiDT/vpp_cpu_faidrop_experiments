@@ -1,0 +1,28 @@
+WEIGHT	 350 Fairness index	 0.999999
+WEIGHT	 350 Cycle Fairness index	 0.999999
+WEIGHT	 700 Fairness index	 0.976386
+WEIGHT	 700 Cycle Fairness index	 0.999978
+WEIGHT	 1050 Fairness index	 0.957114
+WEIGHT	 1050 Cycle Fairness index	 0.999946
+WEIGHT	 1400 Fairness index	 0.945247
+WEIGHT	 1400 Cycle Fairness index	 0.999918
+WEIGHT	 1750 Fairness index	 0.940655
+WEIGHT	 1750 Cycle Fairness index	 0.998343
+WEIGHT	 2100 Fairness index	 0.932379
+WEIGHT	 2100 Cycle Fairness index	 0.999702
+WEIGHT	 2450 Fairness index	 0.929321
+WEIGHT	 2450 Cycle Fairness index	 0.998984
+WEIGHT	 2800 Fairness index	 0.928469
+WEIGHT	 2800 Cycle Fairness index	 0.995653
+WEIGHT	 3150 Fairness index	 0.927114
+WEIGHT	 3150 Cycle Fairness index	 0.992018
+WEIGHT	 3500 Fairness index	 0.92618
+WEIGHT	 3500 Cycle Fairness index	 0.986893
+WEIGHT	 3850 Fairness index	 0.922699
+WEIGHT	 3850 Cycle Fairness index	 0.991265
+WEIGHT	 4200 Fairness index	 0.917655
+WEIGHT	 4200 Cycle Fairness index	 0.998998
+WEIGHT	 4550 Fairness index	 0.915841
+WEIGHT	 4550 Cycle Fairness index	 0.999554
+WEIGHT	 4900 Fairness index	 0.915787
+WEIGHT	 4900 Cycle Fairness index	 0.998018
