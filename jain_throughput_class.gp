@@ -29,7 +29,7 @@
 #Happy gnuplotting
 
 
-set out "jain_throughput.pdf"
+set out "jain_throughput_class.pdf"
 set term pdf font "Times,10"
 #set pointsize 1.25
 
