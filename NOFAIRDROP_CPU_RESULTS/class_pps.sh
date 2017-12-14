@@ -17,7 +17,7 @@ JAIN=$(python -c "print(($SUM*$SUM)/(2*$SQ))")
 SUM1=$(python -c "print($CLOCK_1+$CLOCK_2)")
 SQ1=$(python -c "print(($CLOCK_1*$CLOCK_1)+($CLOCK_2*$CLOCK_2))")
 JAIN1=$(python -c "print(($SUM1*$SUM1)/(2*$SQ1))")
-echo -e "$j\t$i\tTHROUGHPUT JAIN_FAIRNESS INDEX\t$JAIN\tCLOCKCYCLES JAIN_FAIRNESS INDEX\t$JAIN1\n"
+echo -e "$j\t$i\tTHROUGHPUT JAIN_FAIRNESS INDEX\t$JAIN\tCLOCKCYCLES JAIN_FAIRNESS INDEX\t$JAIN1"
 else
 D=$DIR/"$j"_"$i"/plots
 cat $D/flow_pps.dat | awk -v x=$i 'BEGIN{sum=0; sq=0;}{ sum+=($1); sq+= (($1)*($1)); }END{ print ( "WEIGHT\t", x, "Throughput Fairness index\t", (sum*sum)/(NR*sq) )}'

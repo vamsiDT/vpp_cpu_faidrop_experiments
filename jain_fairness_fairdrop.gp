@@ -29,7 +29,7 @@
 #Happy gnuplotting
 
 
-set out "output_throughput.pdf"
+set out "jain_fairness_fairdrop.pdf"
 set term pdf font "Times,10"
 #set pointsize 1.25
 
@@ -37,26 +37,11 @@ set key top righ
 #set ylabel "Per flow rate [pps]"
 set xlabel "Weight Factor"
 set xtics 1
-set boxwidth 0.25
-set style fill solid
-#set ytics nomirror
-#set y2tics
-#set yrange [0:5]
-#set y2range [0:6000]
-set ylabel "Overall Output Throughput VPP"
-#set y2label "Flow Weight"
-#set format y "%.t^.10^%T"
-#set ytics 200000
-#set yran [1e3:]
-#min(a,b)=a<b?a:b
-#stats 	'flow_pps.dat'	every ::1 using 1 nooutput
-#total=int(STATS_sum)
-#print("Total Throughput")
-#print(total)
-#f(x)=total
-set yrange [0:9]
+set yrange [0.1:1]
+set ylabel "Jain Fairness Index"
 
 plot \
-'FAIRDROP_CPU_RESULTS_1/in_out_thf.dat'	u ($0+1-0.25):($3/1000000)   	t 'Fairdrop'  axes x1y1 with boxes ,	\
-'NOFAIRDROP_CPU_RESULTS/in_out_nofdthf.dat'  u ($0+1):($3/1000000)	t 'Taildrop'   axes x1y1 with boxes
-#'flow_pps.dat'  u ($0+1+0.25):(f($1)/1000000)           t 'Per Flow Throughput'  axes x1y1 with boxes
+'FAIRDROP_CPU_RESULTS_1/jain_fairness_thf.dat' every 2:2 u ($0+1):6 title "Throughput Jain fairness Index" lw 2 w lp,\
+'FAIRDROP_CPU_RESULTS_1/jain_fairness_thf.dat' every 2:2:1 u ($0+1):6 title "Clock Cycle Jain fairness Index" lw 2 w lp
+#'jain_fairness_class_fairdrop.dat' u ($0+1):6 lw 2 w lp
+#'flow_pps.dat'  u ($0+1-0.25):(f($1)/1000000)           t 'Per Flow Throughput'  axes x1y1 with boxes
