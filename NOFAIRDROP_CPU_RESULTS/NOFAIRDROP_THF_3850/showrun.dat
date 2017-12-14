@@ -1,0 +1,41 @@
+Thread 0 vpp_main (lcore 28)
+Time 90.3, average vectors/node 1.50, last 128 main loops 0.00 per node 0.00
+  vector rates in 0.0000e0, out 4.4306e-2, drop 0.0000e0, punt 0.0000e0
+             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
+TenGigabitEthernet84/0/0-outpu   active                  2               2               0         6260.00            1.00
+TenGigabitEthernet84/0/0-tx      active                  2               2               0        12156.00            1.00
+TenGigabitEthernet84/0/1-outpu   active                  2               2               0         2240.00            1.00
+TenGigabitEthernet84/0/1-tx      active                  2               2               0         5528.00            1.00
+api-rx-from-ring                 active                  0               0              38      5203327.99            0.00
+cdp-process                     any wait                 0               0              60        72500.00            0.00
+dhcp-client-process             any wait                 0               0               1         8864.00            0.00
+dpdk-process                    any wait                 0               0              30     14368100.00            0.00
+fib-walk                        any wait                 0               0            9341     31766747.99            0.00
+gmon-process                    time wait                0               0              18        53864.00            0.00
+icmp6-router-solicitation        active                  2               4               0        33860.00            2.00
+ikev2-manager-process           any wait                 0               0              90       271340.00            0.00
+ip6-icmp-neighbor-discovery-ev  any wait                 0               0              90       304788.00            0.00
+ip6-rewrite-mcast                active                  2               4               0        17776.00            2.00
+lisp-retry-service              any wait                 0               0              45       172640.00            0.00
+unix-epoll-input                 polling            747853               0               0 233685012868.00            0.00
+vpe-oam-process                 any wait                 0               0              45       109684.00            0.00
+vpe-route-resolver-process      any wait                 0               0               1         9496.00            0.00
+---------------
+Thread 1 vpp_wk_0 (lcore 29)
+Time 90.3, average vectors/node 255.99, last 128 main loops 14.00 per node 256.00
+  vector rates in 3.9264e6, out 3.9264e6, drop 0.0000e0, punt 0.0000e0
+             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
+TenGigabitEthernet84/0/1-outpu   active            1384664       354473728               0   2920615056.00          255.99
+TenGigabitEthernet84/0/1-tx      active            1384664       354473728               0  26675872844.00          255.99
+dpdk-input                       polling           1529472       354473728               0  41090764908.00          231.76
+ip4-input-no-checksum            active            1384664       354473728               0  10163650472.00          255.99
+ip4-load-balance                 active            1384664       354473728               0   6970040568.00          255.99
+ip4-lookup                       active            1384664       354473728               0  12353963928.00          255.99
+ip4-rewrite                      active            1384664       354473728               0 133652339712.00          255.99
+---------------
+Thread 2 vpp_wk_1 (lcore 30)
+Time 90.3, average vectors/node 0.00, last 128 main loops 0.00 per node 0.00
+  vector rates in 0.0000e0, out 0.0000e0, drop 0.0000e0, punt 0.0000e0
+             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
+dpdk-input                       polling         700316260               0               0 233827206608.00            0.00
+

@@ -1,0 +1,14 @@
+              Name               Idx       State          Counter          Count     
+TenGigabitEthernet84/0/0          1         up       rx packets             583007488
+                                                     rx bytes             34980449280
+                                                     tx packets                     2
+                                                     tx bytes                     172
+                                                     drops                   63185975
+                                                     ip4                    519821513
+                                                     rx-miss                669272526
+                                                     tx-error                       2
+TenGigabitEthernet84/0/1          2         up       tx packets             519821515
+                                                     tx bytes             31189290952
+                                                     tx-error                       2
+local0                            0        down      drops                          4
+

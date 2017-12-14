@@ -1,0 +1,42 @@
+Thread 0 vpp_main (lcore 28)
+Time 90.3, average vectors/node 1.50, last 128 main loops 0.00 per node 0.00
+  vector rates in 0.0000e0, out 4.4313e-2, drop 0.0000e0, punt 0.0000e0
+             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
+TenGigabitEthernet84/0/0-outpu   active                  2               2               0         5492.00            1.00
+TenGigabitEthernet84/0/0-tx      active                  2               2               0         6172.00            1.00
+TenGigabitEthernet84/0/1-outpu   active                  2               2               0         3832.00            1.00
+TenGigabitEthernet84/0/1-tx      active                  2               2               0         3256.00            1.00
+api-rx-from-ring                 active                  0               0              39      3511028.00            0.00
+cdp-process                     any wait                 0               0              71        68780.00            0.00
+dhcp-client-process             any wait                 0               0               1        11504.00            0.00
+dpdk-process                    any wait                 0               0              30     15310515.99            0.00
+fib-walk                        any wait                 0               0            9337     30982852.00            0.00
+gmon-process                    time wait                0               0              18        67832.00            0.00
+icmp6-router-solicitation        active                  2               4               0        27672.00            2.00
+ikev2-manager-process           any wait                 0               0              90       279460.00            0.00
+ip6-icmp-neighbor-discovery-ev  any wait                 0               0              90       268372.00            0.00
+ip6-rewrite-mcast                active                  2               4               0        15100.00            2.00
+lisp-retry-service              any wait                 0               0              45       156284.00            0.00
+unix-epoll-input                 polling            733446               0               0 233491674478.00            0.00
+vpe-oam-process                 any wait                 0               0              44        98564.00            0.00
+vpe-route-resolver-process      any wait                 0               0               1        16872.00            0.00
+---------------
+Thread 1 vpp_wk_0 (lcore 29)
+Time 90.3, average vectors/node 194.87, last 128 main loops 13.14 per node 210.25
+  vector rates in 6.4626e6, out 5.7622e6, drop 7.0042e5, punt 0.0000e0
+             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
+TenGigabitEthernet84/0/1-outpu   active            2278275       520134426               0   4202796552.00          228.30
+TenGigabitEthernet84/0/1-tx      active            2278275       520134426               0  39342994300.00          228.30
+dpdk-input                       polling           2402169       583359488               0  99926089380.00          242.85
+error-drop                       active            2278743        63225062               0   3022902120.00           27.75
+ip4-input-no-checksum            active            2278275       520134426               0  14871789496.00          228.30
+ip4-load-balance                 active            2278275       520134426               0   9584500064.00          228.30
+ip4-lookup                       active            2278275       520134426               0  17845030072.00          228.30
+ip4-rewrite                      active            2278275       520134426               0  44768921820.00          228.30
+---------------
+Thread 2 vpp_wk_1 (lcore 30)
+Time 90.3, average vectors/node 0.00, last 128 main loops 0.00 per node 0.00
+  vector rates in 0.0000e0, out 0.0000e0, drop 0.0000e0, punt 0.0000e0
+             Name                 State         Calls          Vectors        Suspends         Clocks       Vectors/Call  
+dpdk-input                       polling         666811391               0               0 149138454152.00            0.00
+

@@ -1,9 +1,0 @@
-WEIGHT=500
-FILE=$DPDK_INPUT/flow_table_cpu.h
-EXP=/home/vk/vpp_cpu_faidrop_experiments
-until [ $WEIGHT -gt 5000 ]
-do
-sed -i "s/^\(#define WEIGHT_CLASS_1 \).*/\1$WEIGHT/" $FILE
-
-BW=$(python -c "print($WEIGHT+500)")
-done
