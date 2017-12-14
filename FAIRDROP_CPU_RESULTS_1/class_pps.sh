@@ -3,7 +3,7 @@ i=350
 DIR=$(pwd)
 while [[ $i -le 7000 ]];do
 for j in FAIRDROP_THF;do
-if [[ $k -gt 70000 ]]; then
+if [[ $1 -eq 1 ]]; then
 CLASS_1=$(cat $DIR/"$j"_"$i"/plots/flow_pps.dat | head --lines 3 | tail --lines 1| awk '{print $1}')
 CLASS_2=$(cat $DIR/"$j"_"$i"/plots/flow_pps.dat | head --lines 1 | awk '{print $1}')
 CLOCK_1=$(python -c "print($CLASS_1 * 350)")
@@ -18,11 +18,12 @@ JAIN=$(python -c "print(($SUM*$SUM)/(2*$SQ))")
 SUM1=$(python -c "print($CLOCK_1+$CLOCK_2)")
 SQ1=$(python -c "print(($CLOCK_1*$CLOCK_1)+($CLOCK_2*$CLOCK_2))")
 JAIN1=$(python -c "print(($SUM1*$SUM1)/(2*$SQ1))")
-echo -e "$j\t$i\tTHROUGHPUT JAIN_FAIRNESS INDEX\t$JAIN\tCLOCKCYCLES JAIN_FAIRNESS INDEX\t$JAIN1\n"
-fi
+echo -e "$j\t$i\tTHROUGHPUT JAIN_FAIRNESS INDEX\t$JAIN\tCLOCKCYCLES JAIN_FAIRNESS INDEX\t$JAIN1"
+else
 D=$DIR/"$j"_"$i"/plots
-cat $D/flow_pps.dat | awk -v x=$i 'BEGIN{sum=0; sq=0;}{ sum+=($1); sq+= (($1)*($1)); }END{ print ( "WEIGHT\t", x, "Fairness index\t", (sum*sum)/(NR*sq) )}'
+cat $D/flow_pps.dat | awk -v x=$i 'BEGIN{sum=0; sq=0;}{ sum+=($1); sq+= (($1)*($1)); }END{ print ( "WEIGHT\t", x, "Throughput Fairness index\t", (sum*sum)/(NR*sq) )}'
 cat $D/flow_pps.dat | awk -v x=$i 'BEGIN{sum=0; sq=0;}{ sum+=($1*$3); sq+= (($1*$3)*($1*$3)); }END{ print ( "WEIGHT\t", x, "Cycle Fairness index\t", (sum*sum)/(NR*sq) )}'
+fi
 done
 i=$(( $i+350 ))
 done
