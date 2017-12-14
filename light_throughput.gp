@@ -29,7 +29,7 @@
 #Happy gnuplotting
 
 
-set out "heavy_throughput.pdf"
+set out "light_throughput.pdf"
 set term pdf font "Times,10"
 #set pointsize 1.25
 
@@ -42,7 +42,7 @@ set style fill solid
 set ytics nomirror
 set y2tics
 #set yrange [0:5]
-set y2range [0:6000]
+set y2range [0:2000]
 set ylabel "Per FLow MPPS"
 set y2label "Flow Weight"
 #set format y "%.t^.10^%T"
@@ -57,7 +57,7 @@ set y2label "Flow Weight"
 set yrange [0:0.4]
 
 plot \
-'FAIRDROP_CPU_RESULTS_1/FAIRDROP_THF_4900/plots/flow_pps.dat'  u ($0+1+0.25):3	t 'Flow Weight'		 axes x1y2 with boxes, \
-'FAIRDROP_CPU_RESULTS_1/FAIRDROP_THF_4900/plots/flow_pps.dat'	u ($0+1):($1/1000000)   	t 'Fairdrop Per Flow Throughput'  axes x1y1 with lp,\
-'NOFAIRDROP_CPU_RESULTS/NOFAIRDROP_THF_4900/plots/flow_pps.dat'   u ($0+1):($1/1000000)       t 'Taildrop Per Flow Throughput'  axes x1y1 with lp
+'FAIRDROP_CPU_RESULTS_1/FAIRDROP_THF_1050/plots/flow_pps.dat'  u ($0+1+0.25):3	t 'Flow Weight'		 axes x1y2 with boxes, \
+'FAIRDROP_CPU_RESULTS_1/FAIRDROP_THF_1050/plots/flow_pps.dat'	u ($0+1):($1/1000000)   	t 'Fairdrop Per Flow Throughput'  axes x1y1 with lp,\
+'NOFAIRDROP_CPU_RESULTS/NOFAIRDROP_THF_1050/plots/flow_pps.dat'   u ($0+1):($1/1000000)       t 'Taildrop Per Flow Throughput'  axes x1y1 with lp
 #'flow_pps.dat'  u ($0+1-0.25):(f($1)/1000000)           t 'Per Flow Throughput'  axes x1y1 with boxes

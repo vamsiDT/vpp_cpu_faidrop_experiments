@@ -41,7 +41,7 @@ set boxwidth 0.25
 set style fill solid
 set ytics nomirror
 set y2tics
-set yrange [0:400]
+set yrange [0:900]
 set y2range [0:6000]
 #set y2tic 500
 #set format y "%.0t^.10^%T"
@@ -52,7 +52,8 @@ set y2label "Flow Weight"
 #min(a,b)=a<b?a:b
 
 plot \
-'FAIRDROP_CPU_RESULTS_1/FAIRDROP_THF_4900/plots/flow_pps.dat'  u ($0+1+0.25):3:y2tic(3) t 'Flow Weight'          axes x1y2 with boxes, \
-'FAIRDROP_CPU_RESULTS_1/FAIRDROP_THF_4900/plots/flow_pps.dat'  u ($0+1):(($1*$3)/1e6) t 'Cycles/sec per Flow' axes x1y1 with  lp
+'FAIRDROP_CPU_RESULTS_1/FAIRDROP_THF_4900/plots/flow_pps.dat'  u ($0+1+0.25):3 t 'Flow Weight'          axes x1y2 with boxes, \
+'FAIRDROP_CPU_RESULTS_1/FAIRDROP_THF_4900/plots/flow_pps.dat'  u ($0+1):(($1*$3)/1e6) t 'Fairdrop Cycles/sec per Flow' axes x1y1 with  lp,\
+'NOFAIRDROP_CPU_RESULTS/NOFAIRDROP_THF_4900/plots/flow_pps.dat'  u ($0+1):(($1*$3)/1e6) t 'Taildrop Cycles/sec per Flow' axes x1y1 with  lp
 #'flow_pps.dat'  u ($0+1):($1*$3) t 'Cycles/sec per Flow'       w  boxes
 
