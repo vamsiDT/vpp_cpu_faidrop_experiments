@@ -54,7 +54,7 @@ total=int(STATS_sum)
 print("Total Throughput")
 print(total)
 #f(x)=total
-set yrange [0:8]
+set yrange [0:9]
 
 plot \
 'in_out.dat'	u ($0+1+0.25):($2/1000000):ytic(2)   	t 'VPP Output'  axes x1y1 with boxes ,	\

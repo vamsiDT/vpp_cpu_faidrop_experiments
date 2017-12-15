@@ -4,7 +4,7 @@ SCRIPTS="/home/vk/scripts_cpu"
 EXP="/home/vk/vpp_cpu_faidrop_experiments"
 COST=5950
 #EXP=$(pwd)
-FLOW="/home/vk/FLOW_MONITOR/DPDK-FlowCount"
+FLOW="/home/vk/FLOW_MONITOR/DPDK-FlowCount"  #/home/vk/FLOW_MONITOR_INST/FlowMon-DPDK-sample
 if [[ $ELOG -eq 1 ]];then
 echo "NO ELOG"
 else
