@@ -43,7 +43,7 @@ set style fill solid
 #set y2tics
 #set yrange [0:5]
 #set y2range [0:6000]
-set ylabel "Overall Input Throughput VPP"
+set ylabel "Overall Input Throughput VPP MPPS"
 #set y2label "Flow Weight"
 #set format y "%.t^.10^%T"
 #set ytics 200000
