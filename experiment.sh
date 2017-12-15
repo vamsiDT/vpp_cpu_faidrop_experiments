@@ -2,7 +2,7 @@
 ELOG=$1 #ELOG 1 means no elog; ELOG 0 means elog is enabled.
 SCRIPTS="/home/vk/scripts_cpu"
 EXP="/home/vk/vpp_cpu_faidrop_experiments"
-COST=7000
+COST=700
 #EXP=$(pwd)
 FLOW="/home/vk/FLOW_MONITOR/DPDK-FlowCount"  #/home/vk/FLOW_MONITOR_INST/FlowMon-DPDK-sample
 if [[ $ELOG -eq 1 ]];then
