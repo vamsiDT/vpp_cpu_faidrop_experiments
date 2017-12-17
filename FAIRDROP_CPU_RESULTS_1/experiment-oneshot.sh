@@ -1,4 +1,4 @@
-WEIGHT=7100
+WEIGHT=350
 WORK=$(pwd)
 FILE=$DPDK_INPUT/flow_table_cpu.h
 EXP=/home/vk/vpp_cpu_faidrop_experiments
